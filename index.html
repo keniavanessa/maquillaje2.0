@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Beauty - Tu tienda de maquillaje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <div class="container header-content">
+            <div class="logo">Bella Beauty</div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tutoriales</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Belleza sin límites</h1>
+            <p>Descubre nuestra exclusiva colección de productos de maquillaje de alta calidad para realzar tu belleza natural</p>
+            <a href="#" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <section class="container">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <div>
+                        <h2>30% de descuento en bases</h2>
+                        <p>Promoción por tiempo limitado en todas nuestras bases de maquillaje premium</p>
+                        <a href="#" class="btn">Ver Oferta</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div>
+                        <h2>Nuevos labiales mate</h2>
+                        <p>Descubre nuestra nueva colección de labiales mate de larga duración</p>
+                        <a href="#" class="btn">Comprar Ahora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div>
+                        <h2>Tutorial de maquillaje</h2>
+                        <p>Aprende a crear looks profesionales con nuestros tutoriales en línea</p>
+                        <a href="#" class="btn">Ver Tutoriales</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-control prev">&#10094;</button>
+                <button class="carousel-control next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="container">
+        <h2 class="section-title">Productos Destacados</h2>
+        <div class="products" id="products-container">
+            <!-- Products will be added dynamically via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Suscríbete a nuestro boletín</h2>
+            <p>Recibe las últimas noticias, ofertas exclusivas y consejos de belleza directamente en tu bandeja de entrada</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="newsletter-btn">Suscribirme</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Bella Beauty</h3>
+                    <p>Tu tienda de maquillaje de confianza para productos de alta calidad y las últimas tendencias en belleza.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Envíos y Devoluciones</a></li>
+                        <li><a href="#">Métodos de Pago</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">FB</a>
+                        <a href="#" class="social-link">IG</a>
+                        <a href="#" class="social-link">TW</a>
+                        <a href="#" class="social-link">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Bella Beauty. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2 class="modal-title">Producto añadido al carrito</h2>
+            <div class="modal-body">
+                <p>El producto ha sido añadido a tu carrito correctamente.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" id="continue-shopping">Seguir Comprando</button>
+            </div>
+        </div>
+    </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
